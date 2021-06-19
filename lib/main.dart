@@ -19,19 +19,33 @@ class _RandomWordsState extends State<RandomWords> {
 }
 
 class MyApp extends StatelessWidget {
+
+  //  For Show SNACKBAR create the instance of ScaffoldMessengerState...
   final _messangerKey = GlobalKey<ScaffoldMessengerState>();
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       scaffoldMessengerKey: _messangerKey,
+
       home: Scaffold(
+
+        /********************
+         * START, AppBar setup
+         * */
         appBar: AppBar(
           title: Text(
             "Random Word",
             style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.deepOrange,
+
+
+          /********************
+           * START, Top Action button
+           * Set Alarm, Camera, Alert Icon...
+           * */
           actions: [
             IconButton(
               icon: const Icon(Icons.add_alarm_outlined),
@@ -58,7 +72,18 @@ class MyApp extends StatelessWidget {
               },
             )
           ],
+          /********************
+           * END, Top Action button
+           * Set Alarm, Camera, Alert Icon...
+           * */
+
+
         ),
+        /********************
+         * END, AppBar setup
+         * */
+
+
         body: Center(
           child: RandomWords(),
         ),
