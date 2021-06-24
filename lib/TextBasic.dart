@@ -30,7 +30,7 @@ class TextBasic extends StatelessWidget {
               icon: const Icon(Icons.add_alarm_outlined),
               tooltip: 'Show Snackbar',
               onPressed: () {
-                _messangerKey.currentState
+                _messangerKey.currentState!
                     .showSnackBar(SnackBar(content: Text('Alarm icon')));
               },
             ),
@@ -38,7 +38,7 @@ class TextBasic extends StatelessWidget {
               icon: const Icon(Icons.add_a_photo_outlined),
               tooltip: 'Show Snackbar',
               onPressed: () {
-                _messangerKey.currentState
+                _messangerKey.currentState!
                     .showSnackBar(SnackBar(content: Text('Camera icon')));
               },
             ),
@@ -46,7 +46,7 @@ class TextBasic extends StatelessWidget {
               icon: const Icon(Icons.add_alert_outlined),
               tooltip: 'Show Snackbar',
               onPressed: () {
-                _messangerKey.currentState
+                _messangerKey.currentState!
                     .showSnackBar(SnackBar(content: Text('Alert icon')));
               },
             )

@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_helloworld/TextBasic.dart';
 
-void main() {
+import 'ScrollingListView.dart';
 
-  /**
-   * Text related example with RandomWords using library
+void main() {
+  /******************************
+   * Text related example with RandomWords Library
    * */
-  runApp(TextBasic());
+  //  runApp(TextBasic());
+
+  /******************************
+   * Learn scrolling listview with RandomWords Library
+   * */
+  runApp(ScrollingListView());
 }
