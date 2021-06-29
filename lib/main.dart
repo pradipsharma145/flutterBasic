@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_helloworld/ItemSelectionScrollingListView.dart';
 import 'package:flutter_helloworld/TextBasic.dart';
 
 import 'ScrollingListView.dart';
@@ -12,5 +13,10 @@ void main() {
   /******************************
    * Learn scrolling listview with RandomWords Library
    * */
-  runApp(ScrollingListView());
+  //  runApp(ScrollingListView());
+
+  /******************************
+   * Single item selection from scrolling listview
+   * */
+  runApp(ItemSelectionScrollingListView());
 }
