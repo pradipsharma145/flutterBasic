@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_helloworld/ItemSelectionScrollingListView.dart';
-import 'package:flutter_helloworld/TextBasic.dart';
+import 'package:flutter_basic/ItemSelectionScrollingListView.dart';
+import 'package:flutter_basic/TextBasic.dart';
 
 import 'ScrollingListView.dart';
 
