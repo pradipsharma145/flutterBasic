@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/RowWidget.dart';
 import 'package:flutter_basic/ItemSelectionScrollingListView.dart';
+import 'package:flutter_basic/NavigateToNewScreen.dart';
+import 'package:flutter_basic/BottomNavigationWidget.dart';
 import 'package:flutter_basic/TextBasic.dart';
 
 import 'ScrollingListView.dart';
@@ -18,5 +21,16 @@ void main() {
   /******************************
    * Single item selection from scrolling listview
    * */
-  runApp(ItemSelectionScrollingListView());
+  //  runApp(ItemSelectionScrollingListView());
+
+  /******************************
+   * Learn how to navigate between the home route and the new route.
+   * */
+  //  runApp(NavigateToNewScreen());
+
+  /******************************
+   * BottomNavigation
+   * */
+    //  runApp(BottomNavigationWidget());
+    runApp(RowWidget());
 }
