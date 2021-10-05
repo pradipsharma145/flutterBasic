@@ -11,7 +11,7 @@ class RowWidget extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
           shadowColor: Colors.blueGrey,
-          title: Text("Learn Row Basics"),
+          title: Text('Learn Row Basics'),
         ),
         body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -22,7 +22,7 @@ class RowWidget extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: Colors.amber),
-              child: Text("One",
+              child: Text('One',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white,
@@ -36,7 +36,7 @@ class RowWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.pink),
-                child: Text("Two",
+                child: Text('Two',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white, fontSize: 25))),
             Container(
@@ -45,7 +45,7 @@ class RowWidget extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: Colors.teal),
-              child: Text("Three",
+              child: Text('Three',
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 25)),
             )
