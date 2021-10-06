@@ -80,36 +80,36 @@ class NestingRowsColumns extends StatelessWidget {
     var columnFirst = Column(
       children: <Widget>[
         Icon(
-          Icons.star,
+          Icons.precision_manufacturing_outlined,
           size: 50,
           color: Colors.deepOrange,
         ),
-        Text("First Text"),
-        Text("Second Text"),
+        Text("Manufacturing"),
+        Text("25 Min"),
       ],
     );
 
     var columnSecond = Column(
       children: <Widget>[
         Icon(
-          Icons.star,
+          Icons.business,
           size: 50,
           color: Colors.deepOrange,
         ),
-        Text("First Text"),
-        Text("Second Text"),
+        Text("Business"),
+        Text("Since 1200"),
       ],
     );
 
     var columnThird = Column(
       children: <Widget>[
         Icon(
-          Icons.star,
+          Icons.school,
           size: 50,
           color: Colors.deepOrange,
         ),
-        Text("First Text"),
-        Text("Second Text"),
+        Text("School"),
+        Text(""),
       ],
     );
 
@@ -144,7 +144,7 @@ class NestingRowsColumns extends StatelessWidget {
               strDummyText,
               combineColumn,
               _buildImageRow(1),
-              _buildCard(),
+              _buildCard()
             ],
           ),
         ),
@@ -163,11 +163,24 @@ class NestingRowsColumns extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Icon(
-                Icons.star,
-                size: 50,
-                color: Colors.deepOrange,
-              ),
+              if (imageIndex == 1)
+                Icon(
+                  Icons.business,
+                  size: 35,
+                  color: Colors.deepOrange,
+                )
+              else if (imageIndex == 2)
+                Icon(
+                  Icons.school,
+                  size: 35,
+                  color: Colors.deepOrange,
+                )
+              else
+                Icon(
+                  Icons.hotel,
+                  size: 35,
+                  color: Colors.deepOrange,
+                ),
               Text("Index: $imageIndex"),
             ],
           ),
